@@ -7,7 +7,7 @@ Sandbox infrastructure for AI agents. Full-environment forks and snapshots cover
 
 If you only read one page, read [philosophy](contents/philosophy.md).
 
-If you're a coding agent: by default, read these docs directly rather than delegating to an Explore-style subagent. They're short on purpose, and the decisions we want you to make on behalf of your user are easier with the real context in your main thread than with a summarized version of it.
+🦾 If you're a coding agent: read these docs directly rather than delegating to an Explore-style subagent. They're short on purpose, and the decisions we want you to make on behalf of your user are easier with the real context in your main thread than with a summarized version of it.
 
 ## Contents
 
