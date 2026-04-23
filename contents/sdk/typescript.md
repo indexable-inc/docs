@@ -16,7 +16,7 @@ Opinionated surface over Client + Branch. The default way to use ix.
 ```ts
 import { Sandbox } from "@indexable/sdk"
 
-await using sbx = await Sandbox.oci("python:3.12")
+await using sbx = await Sandbox.oci("docker.io/library/python:3.12")
 await sbx.exec(["ls", "-la"])        // fire-and-forget
 ```
 
@@ -24,18 +24,20 @@ Factories:
 
 | | |
 |---|---|
-| `Sandbox.oci(image, opts?)` | Any OCI image |
+| `Sandbox.oci(image, opts?)` | Fully-qualified OCI image reference |
 | `Sandbox.ubuntu(version?, opts?)` | `ubuntu:<version>` shorthand |
 | `Sandbox.attach(vmId, opts?)` | Adopt an existing VM |
 
 `SandboxOptions`: `token`, `baseUrl`, `region`, `env`, `name`, `ipv4`, `l7ProxyPorts`. Env fallbacks: `IX_TOKEN` → `IX_API_KEY`, `IX_API_BASE_URL`, `IX_REGION`.
+
+`Sandbox.oci()` expects a fully-qualified OCI reference such as `docker.io/library/python:3.12`, `ghcr.io/owner/image:tag`, or `registry.example.com/team/app@sha256:...`.
 
 ## REPL
 
 Stateful. Variables, cwd, env persist across `exec` calls on the same handle. Two handles are independent.
 
 ```ts
-await using sbx = await Sandbox.oci("python:3.12")
+await using sbx = await Sandbox.oci("docker.io/library/python:3.12")
 
 await using py = await sbx.repl("python")
 await py.exec("x = 42")
@@ -78,7 +80,7 @@ const bytes = await sbx.readBytes("/tmp/bin")
 `await using` deletes the VM when the scope exits. Call `sbx.close()` explicitly if you prefer.
 
 ```ts
-await using sbx = await Sandbox.oci("ubuntu:24.04")
+await using sbx = await Sandbox.oci("docker.io/library/ubuntu:24.04")
 // ... use sbx
 // VM deleted here
 ```

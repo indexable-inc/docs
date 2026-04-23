@@ -51,7 +51,7 @@ ix vm snapshot vm-7f3a           # memory + disk
 ```ts
 import { Sandbox } from "@indexable/sdk"
 
-await using sbx = await Sandbox.oci("python:3.12")
+await using sbx = await Sandbox.oci("docker.io/library/python:3.12")
 await using py = await sbx.repl("python")
 await py.exec("x = 42")
 await py.exec("print(x)")        // sees x

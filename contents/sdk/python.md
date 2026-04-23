@@ -14,7 +14,7 @@ Reads `IX_TOKEN` from the environment. Override with `token=...`.
 ```python
 from ix_sdk import Sandbox
 
-async with await Sandbox.oci("python:3.12") as sbx:
+async with await Sandbox.oci("docker.io/library/python:3.12") as sbx:
     await sbx.exec(["ls", "-la"])            # fire-and-forget
 ```
 
@@ -22,18 +22,20 @@ Factories:
 
 | | |
 |---|---|
-| `Sandbox.oci(image, **opts)` | Any OCI image |
+| `Sandbox.oci(image, **opts)` | Fully-qualified OCI image reference |
 | `Sandbox.ubuntu(version="24.04", **opts)` | Ubuntu shorthand |
 | `Sandbox.attach(vm_id, **opts)` | Adopt an existing VM |
 
 Options: `token`, `base_url`, `region`, `env`, `name`, `ipv4`, `l7_proxy_ports`. Env fallbacks: `IX_TOKEN` / `IX_API_KEY`, `IX_API_BASE_URL`, `IX_REGION`.
+
+`Sandbox.oci()` expects a fully-qualified OCI reference such as `docker.io/library/python:3.12`, `ghcr.io/owner/image:tag`, or `registry.example.com/team/app@sha256:...`.
 
 ## REPL
 
 Stateful. Variables, cwd, env persist across `exec` calls. Independent handles do not share state.
 
 ```python
-async with await Sandbox.oci("python:3.12") as sbx:
+async with await Sandbox.oci("docker.io/library/python:3.12") as sbx:
     async with await sbx.repl("python") as py:
         await py.exec("x = 42")
         await py.exec("print(x)")            # sees x
