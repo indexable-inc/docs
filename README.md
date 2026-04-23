@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.svg" width="80" alt="ix" />
+</p>
+
 # ix docs
 
 Sandbox infrastructure for AI agents. Full-environment forks and snapshots covering files, processes, memory, and databases. Per-second billing tracks utilization; allocation is just a ceiling.
