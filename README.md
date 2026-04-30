@@ -74,12 +74,13 @@ Things we owe these docs and our users.
 **Numbers we should publish (and haven't):**
 - [ ] Rolling 30 / 90 / 365-day availability per region, from our own monitoring, linked from [reliability](contents/reliability.md).
 - [ ] Boot-latency distribution by image size (cached and uncached), beyond a single median.
-- [ ] Fork creation p50 / p99 and first-write latency after fork.
+- [ ] Fork creation p50 / p99 and first-write latency after fork. (Tracked: ENG-1051.)
 - [ ] Snapshot create / restore times across sizes.
-- [ ] Fsync p50 / p99 / p999 on VCFS under load, compared to direct NVMe on the same host.
-- [ ] Postgres TPC-B-style numbers in-VM vs on bare metal. We make the claim; we owe the data.
+- [ ] Fsync p50 / p99 / p999 on VCFS under load, compared to direct NVMe on the same host. (Tracked: ENG-1052.)
+- [ ] Postgres TPC-B-style numbers in-VM vs on bare metal. We make the claim; we owe the data. (Tracked: ENG-1052.)
 - [ ] Network latency numbers: inter-region RTT, intra-region VM-to-VM, VM-to-internet from each region. (Inter-region bandwidth is 50 Gbps, documented in [network](contents/network.md#inter-region); latency and VM-level throughput measurements still owed.)
 - [ ] Storage durability track record (bytes written, scrub results, any data loss events: expected answer zero, but publish it).
+- [ ] Published RPO / RTO once cross-host snapshot replication ships.
 
 **Product gaps called out in other pages:**
 - [ ] Reference OCI image for desktop / GUI agents, plus SDK helper for frame streaming ([desktop-gui](contents/desktop-gui.md)).
@@ -93,6 +94,9 @@ Things we owe these docs and our users.
 - [ ] First-class security-groups surface, VPC peering across groups, stable egress IPs, BYO BGP ([network](contents/network.md)).
 
 **Platform / company work:**
+- [ ] Cross-host snapshot replication so VMs survive a host loss. (Tracked: ENG-1049.)
+- [ ] Auto-restart VMs on a healthy host after host failure. (Tracked: ENG-1050.)
+- [ ] First external pentest of vmm + VCFS. (Tracked: ENG-1055.)
 - [ ] SOC 2 Type 1, then Type 2. HIPAA. ISO 27001. Timeline published once we're in audit.
 - [ ] Published default availability and durability SLA with credits. Contractual SLAs available on request today ([reliability](contents/reliability.md#slas-on-request)).
 - [ ] EU region. APAC region. Neither committed yet; tell us which unblocks you.

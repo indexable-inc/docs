@@ -2,7 +2,7 @@
 
 Every VM has dual-stack IPv4 + IPv6 and up to 25 Gbps. Raw TCP, UDP, anything.
 
-No port mapping, no load balancer, no ingress/egress fees.
+No port mapping, no load balancer, no ingress/egress fees, no enforced monthly cap. See [pricing](pricing.md#fair-use) for the soft thresholds where we'd want to talk before you push much further.
 
 > [!NOTE]
 > Our bare-metal provider includes automatic DDoS mitigation at the network edge. No configuration needed on your side.
