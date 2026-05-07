@@ -65,7 +65,7 @@ Something missing? Open a PR with a `<!-- TODO -->` section. Feature requests go
 
 ## Support
 
-Slack. See [access](contents/access.md#support).
+Slack. See [access](contents/access.md#support). Service status: [status.ix.dev](https://status.ix.dev/).
 
 ## Todos
 

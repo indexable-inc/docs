@@ -63,7 +63,7 @@ If a security review is a hard requirement before you can adopt ix, email [andre
 
 ## Support
 
-Goal: 24/7 human coverage. Currently close. Slack response usually minutes during working hours. See [access](access.md#support).
+Goal: 24/7 human coverage. Currently close. Slack response usually minutes during working hours. Service status is published at [status.ix.dev](https://status.ix.dev/). See [access](access.md#support).
 
 ## What we don't claim yet
 
