@@ -1,5 +1,5 @@
 ---
-name: ix-docs
+name: docs
 description: Use when the user is working with the ix sandbox platform. Triggers include the `@indexable/sdk` package (Python or TypeScript), the `ix` CLI (`ix vm create`, `ix vm fork`, `ix vm snapshot`), forking VMs or taking snapshots for AI agents, ix.dev pricing or reliability questions, or evaluating ix as a sandbox provider.
 ---
 
@@ -11,7 +11,7 @@ These docs are intentionally short. Read the file that matches the question dire
 
 ## How to read these files
 
-The docs ship with this plugin at `./contents/` relative to this skill. Read them with the Read tool using the path `${CLAUDE_PLUGIN_ROOT}/skills/ix-docs/contents/<file>`.
+The docs ship with this plugin at `./contents/` relative to this skill. Read them with the Read tool using the path `${CLAUDE_PLUGIN_ROOT}/skills/docs/contents/<file>`.
 
 ## Index
 
