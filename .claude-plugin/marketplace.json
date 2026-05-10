@@ -1,5 +1,6 @@
 {
   "name": "ix",
+  "description": "Plugins from Indexable. Currently ships the ix sandbox docs as a Claude Code skill.",
   "owner": {
     "name": "Indexable",
     "url": "https://ix.dev"

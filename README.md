@@ -63,9 +63,16 @@ Install: see [CLI](contents/cli.md), [SDK: Python](contents/sdk/python.md), [SDK
 
 This repo doubles as a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces). Install once and any session that touches ix auto-loads these docs as a skill, with no copy-paste:
 
+From inside Claude Code:
 ```
 /plugin marketplace add indexable-inc/docs
 /plugin install ix-docs@ix
+```
+
+Or from your shell:
+```bash
+claude plugin marketplace add indexable-inc/docs
+claude plugin install ix-docs@ix
 ```
 
 The skill triggers on `@indexable/sdk`, the `ix` CLI, sandbox forks/snapshots, and ix.dev pricing or reliability questions. It points Claude at the markdown in `contents/` directly. Source: [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json), [plugins/ix-docs/](plugins/ix-docs/).
