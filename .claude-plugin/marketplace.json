@@ -7,8 +7,8 @@
   },
   "plugins": [
     {
-      "name": "ix-docs",
-      "source": "./plugins/ix-docs",
+      "name": "ix",
+      "source": "./plugins/ix",
       "description": "Bundles the ix sandbox docs as a Claude Code skill. Auto-loads when you are working with @indexable/sdk, the ix CLI, or evaluating ix as a sandbox provider."
     }
   ]

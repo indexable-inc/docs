@@ -66,16 +66,16 @@ This repo doubles as a [Claude Code plugin marketplace](https://code.claude.com/
 From inside Claude Code:
 ```
 /plugin marketplace add indexable-inc/docs
-/plugin install ix-docs@ix
+/plugin install ix@ix
 ```
 
 Or from your shell:
 ```bash
 claude plugin marketplace add indexable-inc/docs
-claude plugin install ix-docs@ix
+claude plugin install ix@ix
 ```
 
-The skill triggers on `@indexable/sdk`, the `ix` CLI, sandbox forks/snapshots, and ix.dev pricing or reliability questions. It points Claude at the markdown in `contents/` directly. Source: [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json), [plugins/ix-docs/](plugins/ix-docs/).
+The skill triggers on `@indexable/sdk`, the `ix` CLI, sandbox forks/snapshots, and ix.dev pricing or reliability questions. It points Claude at the markdown in `contents/` directly. Source: [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json), [plugins/ix/](plugins/ix/).
 
 ## Gaps
 

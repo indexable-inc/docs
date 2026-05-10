@@ -1,5 +1,5 @@
 {
-  "name": "ix-docs",
+  "name": "ix",
   "version": "0.1.0",
   "description": "ix sandbox platform docs, packaged as a Claude Code skill.",
   "author": {
