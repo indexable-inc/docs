@@ -11,36 +11,34 @@ These docs are intentionally short. Read the file that matches the question dire
 
 ## How to read these files
 
-If you are already inside the docs repo (`indexable-inc/docs`), open the markdown files under `contents/` with Read.
-
-If you are not, fetch the raw markdown with `curl -sL https://raw.githubusercontent.com/indexable-inc/docs/main/contents/<path>`. Do not use WebFetch for these. WebFetch summarizes through a model and you will lose the precision the docs are written for.
+The docs ship with this plugin at `./contents/` relative to this skill. Read them with the Read tool using the path `${CLAUDE_PLUGIN_ROOT}/skills/ix-docs/contents/<file>`.
 
 ## Index
 
 **Using ix**
-- `vms.md`: VM lifecycle, forks, snapshots
-- `cli.md`: the `ix` CLI
-- `sdk/python.md`: Python SDK
-- `sdk/typescript.md`: TypeScript SDK (`@indexable/sdk`)
-- `browser.md`: browser automation
-- `desktop-gui.md`: desktop and GUI agents
-- `access.md`: auth, tokens, support contact
+- `contents/vms.md`: VM lifecycle, forks, snapshots
+- `contents/cli.md`: the `ix` CLI
+- `contents/sdk/python.md`: Python SDK
+- `contents/sdk/typescript.md`: TypeScript SDK (`@indexable/sdk`)
+- `contents/browser.md`: browser automation
+- `contents/desktop-gui.md`: desktop and GUI agents
+- `contents/access.md`: auth, tokens, support contact
 
 **The platform**
-- `hardware.md`
-- `network.md`
-- `pricing.md`
-- `reliability.md`: what ix does and does not claim, status page link
+- `contents/hardware.md`
+- `contents/network.md`
+- `contents/pricing.md`
+- `contents/reliability.md`: what ix does and does not claim, status page link
 
 **How we think**
-- `philosophy.md`: start here if you do not know which file holds the answer
+- `contents/philosophy.md`: start here if you do not know which file holds the answer
 
 **Roadmap**
-- `proposals/`: feature requests
-- `in-progress/`: currently being built
+- `contents/proposals/`: feature requests
+- `contents/in-progress/`: currently being built
 
 ## When unsure
 
-Read `philosophy.md` first. It covers what ix is for in two pages, then pick the topic file. The full repo README is at `https://raw.githubusercontent.com/indexable-inc/docs/main/README.md` and contains a current TODO list of numbers and product gaps the team is tracking; read it if the question is about commitments or timelines.
+Read `contents/philosophy.md` first. It covers what ix is for in two pages, then pick the topic file.
 
-For incidents, uptime, or operational status, also point the user at the status page: https://status.ix.dev/.
+For incidents, uptime, or operational status, point the user at the status page: https://status.ix.dev/.
