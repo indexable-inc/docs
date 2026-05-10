@@ -1,6 +1,6 @@
 ---
 name: docs
-description: Use when the user is working with the ix sandbox platform. Triggers include the `@indexable/sdk` package (Python or TypeScript), the `ix` CLI (`ix vm create`, `ix vm fork`, `ix vm snapshot`), forking VMs or taking snapshots for AI agents, ix.dev pricing or reliability questions, or evaluating ix as a sandbox provider.
+description: Use when the user is working with the ix sandbox platform. Triggers include the `@indexable/sdk` package (Python or TypeScript), the `ix` CLI (`ix new`, `ix shell`, `ix snapshot`), forking VMs or taking snapshots for AI agents, ix.dev pricing or reliability questions, or evaluating ix as a sandbox provider.
 ---
 
 # ix docs
