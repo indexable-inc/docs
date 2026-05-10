@@ -1,0 +1,6 @@
+{
+  "name": "ix-docs",
+  "description": "ix sandbox platform docs, packaged as a Claude Code skill.",
+  "homepage": "https://ix.dev",
+  "repository": "https://github.com/indexable-inc/docs"
+}

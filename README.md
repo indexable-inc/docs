@@ -59,6 +59,17 @@ await py.exec("print(x)")        // sees x
 
 Install: see [CLI](contents/cli.md), [SDK: Python](contents/sdk/python.md), [SDK: TypeScript](contents/sdk/typescript.md).
 
+## Use as a Claude Code plugin
+
+This repo doubles as a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces). Install once and any session that touches ix auto-loads these docs as a skill, with no copy-paste:
+
+```
+/plugin marketplace add indexable-inc/docs
+/plugin install ix-docs@ix
+```
+
+The skill triggers on `@indexable/sdk`, the `ix` CLI, sandbox forks/snapshots, and ix.dev pricing or reliability questions. It points Claude at the markdown in `contents/` directly. Source: [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json), [plugins/ix-docs/](plugins/ix-docs/).
+
 ## Gaps
 
 Something missing? Open a PR with a `<!-- TODO -->` section. Feature requests go in [contents/proposals/](contents/proposals/).
