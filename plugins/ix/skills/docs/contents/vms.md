@@ -7,11 +7,7 @@ VMs boot in ~1 second from any OCI image. Full VMs with their own kernel; PID 1 
 
 ## Create
 
-```bash
-ix new docker.io/library/ubuntu:24.04
-```
-
-Images must be fully qualified OCI references (include the registry).
+Run `ix --help` for create syntax. Images must be fully qualified OCI references (include the registry).
 
 ## Snapshots
 
